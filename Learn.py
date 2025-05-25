@@ -26,8 +26,8 @@ class CouraeCreator(Instructor):
 
     def create_course(self,course_name,no_of_moudles):
         list_of_modules=[]
-        for i in range(1,no_of_moudles):
-            module=input("enter moduel")
+        for i in range(1,no_of_moudles+1):
+            module=input(f"enter moduel {i}:")
             list_of_modules.append(module)
         self.course_created+=1
         return {course_name:list_of_modules}
