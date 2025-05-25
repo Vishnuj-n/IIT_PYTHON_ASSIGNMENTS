@@ -1,3 +1,8 @@
+#  Online Learning Platform
+# Problem Statement: Build a class hierarchy for an online learning platform. The base class User includes name and email. 
+# The subclass Instructor adds subject expertise and a method to upload content. 
+# A third class CourseCreator (inherits from Instructor) allows creation of complete courses with modules. 
+# Override the display_info() method at each level to reflect role-specific details.
 class User:
     def __init__(self,name,email):
         self.name=name

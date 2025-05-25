@@ -12,11 +12,11 @@ class Device:
         print(f"model no : {self.model_no} , manufactured in :{self.place_of_origin}")
 
 
-class Fly:
+class Flyer:
     def fly(self):
         print("Drone flight simulation \n")
 
-class Drone(Fly,Device):
+class Drone(Flyer,Device):
     def __init__(self, model_no, place_of_origin):
         super().__init__(model_no, place_of_origin)
     
